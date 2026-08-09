@@ -1,0 +1,1 @@
+CORE Tools is a clean, lightweight suite of creative tools made for video editors, content creators, and post-production workflows. The goal is simple: provide small, focused apps that help with editing, without turning the workflow into an absolute mess.
