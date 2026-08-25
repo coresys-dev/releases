@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/coresys-dev/releases/main/manifest.schema.json",
+  "title": "CORE Tools Store Manifest",
+  "description": "Consumed by the app launcher to list available apps in the store: icon, screenshots and description are fetched from this repo using each app's media paths.",
+  "type": "object",
+  "required": ["schemaVersion", "repo", "apps"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "repo": {
+      "type": "string",
+      "description": "GitHub 'owner/name' slug. Media paths and releases are resolved against this repo.",
+      "pattern": "^[^/\\s]+/[^/\\s]+$"
+    },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "apps": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/app" }
+    }
+  },
+  "definitions": {
+    "app": {
+      "type": "object",
+      "required": ["id", "name", "description", "media", "releaseTagPrefix", "platforms"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable, unique app id. Used as the folder name and the release tag prefix.",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "name": { "type": "string", "description": "Display name shown in the store." },
+        "tagline": { "type": "string", "description": "Short one-line pitch shown in store listings." },
+        "description": { "type": "string", "description": "Longer description shown on the app's detail page." },
+        "category": { "type": "string" },
+        "platforms": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["windows", "macos", "linux"] }
+        },
+        "releaseTagPrefix": {
+          "type": "string",
+          "description": "Prefix of this app's GitHub release tags, e.g. 'core-v' matches tags like core-v1.4.2.",
+          "pattern": "^[a-z0-9-]+-v$"
+        },
+        "homepage": {
+          "type": "string",
+          "description": "Optional link to the app's own marketing/product page (separate from the store description). Leave empty if none."
+        },
+        "changelog": {
+          "type": "string",
+          "description": "Plain-text changelog shown on the app's detail page (not a URL)."
+        },
+        "media": {
+          "type": "object",
+          "required": ["icon", "screenshots"],
+          "additionalProperties": false,
+          "properties": {
+            "icon": {
+              "type": "string",
+              "description": "Repo-relative path to the app icon/logo, fetched via raw.githubusercontent.com."
+            },
+            "screenshots": {
+              "type": "array",
+              "description": "Repo-relative paths to presentation screenshots (3 recommended).",
+              "items": { "type": "string" },
+              "minItems": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

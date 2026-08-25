@@ -1,0 +1,7 @@
+# Local build artifacts staged for release (see scripts/release.ps1).
+# Never committed: they are uploaded to GitHub Releases instead.
+/ARTIFACTS/*
+!/ARTIFACTS/.gitkeep
+
+# Secrets — GITHUB_TOKEN etc. Never commit.
+.env

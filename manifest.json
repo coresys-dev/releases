@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/coresys-dev/releases/main/manifest.schema.json",
+  "schemaVersion": 1,
+  "repo": "coresys-dev/releases",
+  "updatedAt": "2026-08-26T00:00:00Z",
+  "apps": [
+    {
+      "id": "core",
+      "name": "CORE",
+      "tagline": "The clean, lightweight suite of creative tools for video editors.",
+      "description": "CORE Tools is a clean, lightweight suite of creative tools made for video editors, content creators, and post-production workflows. The goal is simple: provide small, focused apps that help with editing, without turning the workflow into an absolute mess.",
+      "category": "creative-suite",
+      "platforms": ["windows", "macos"],
+      "releaseTagPrefix": "core-v",
+      "homepage": "",
+      "changelog": "",
+      "media": {
+        "icon": "core/icon/icon.png",
+        "screenshots": [
+          "core/screenshots/1.png",
+          "core/screenshots/2.png",
+          "core/screenshots/3.png"
+        ]
+      }
+    },
+    {
+      "id": "sldr",
+      "name": "SLDR",
+      "tagline": "TODO: one-line pitch for SLDR.",
+      "description": "TODO: full description for SLDR, shown on its detail page in the store.",
+      "category": "creative-tool",
+      "platforms": ["windows", "macos"],
+      "releaseTagPrefix": "sldr-v",
+      "homepage": "",
+      "changelog": "",
+      "media": {
+        "icon": "sldr/icon/icon.png",
+        "screenshots": [
+          "sldr/screenshots/1.png",
+          "sldr/screenshots/2.png",
+          "sldr/screenshots/3.png"
+        ]
+      }
+    }
+  ]
+}
