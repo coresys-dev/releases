@@ -19,17 +19,17 @@
       "media": {
         "icon": "core/icon/icon.png",
         "screenshots": [
-          "core/screenshots/1.png",
-          "core/screenshots/2.png",
-          "core/screenshots/3.png"
+          "/apps/core/screenshots/1.png",
+          "/apps/core/screenshots/2.png",
+          "/apps/core/screenshots/3.png"
         ]
       }
     },
     {
       "id": "sldr",
       "name": "SLDR",
-      "tagline": "TODO: one-line pitch for SLDR.",
-      "description": "TODO: full description for SLDR, shown on its detail page in the store.",
+      "tagline": "Search. Listen. Drag. Repeat.",
+      "description": "SLDR is a simple, lightweight audio sample browser for quickly auditioning and dragging samples into your DAW or editor. It supports drag-and-drop from the app to any other app that accepts audio files.",
       "category": "creative-tool",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "sldr-v",
@@ -38,9 +38,9 @@
       "media": {
         "icon": "sldr/icon/icon.png",
         "screenshots": [
-          "sldr/screenshots/1.png",
-          "sldr/screenshots/2.png",
-          "sldr/screenshots/3.png"
+          "/apps/sldr/screenshots/1.png",
+          "/apps/sldr/screenshots/2.png",
+          "/apps/sldr/screenshots/3.png"
         ]
       }
     }

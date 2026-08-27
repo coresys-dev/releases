@@ -30,6 +30,11 @@
 .PARAMETER NotesFile
     Path to a file containing release notes.
 
+.PARAMETER MinLauncherVersion
+    Minimum launcher version (semver) allowed to install this release. Written
+    into latest.json as "minLauncherVersion". If omitted, falls back to the
+    repo-wide "minLauncherVersion" in manifest.json (if set).
+
 .PARAMETER DryRun
     Show what would be uploaded/created without calling gh or touching GitHub.
 
@@ -47,6 +52,7 @@ param(
     [string]$Version,
     [string]$Notes,
     [string]$NotesFile,
+    [string]$MinLauncherVersion,
     [switch]$DryRun
 )
 
@@ -223,14 +229,23 @@ foreach ($platformKey in $PlatformFiles.Keys) {
     $PlatformEntries[$platformName] = [ordered]@{ assets = $assetEntries }
 }
 
+# Minimum launcher version for this release: -MinLauncherVersion wins,
+# otherwise fall back to the repo-wide floor in manifest.json (if any).
+$MinLauncher = $MinLauncherVersion
+if (-not $MinLauncher) { $MinLauncher = $manifest.minLauncherVersion }
+if ($MinLauncher -and $MinLauncher -notmatch '^\d+\.\d+\.\d+(-[0-9A-Za-z.-]+)?$') {
+    throw "MinLauncherVersion '$MinLauncher' is not a valid semantic version."
+}
+
 $LatestJson = [ordered]@{
     id        = $AppId
     name      = $app.name
     version   = $Version
     notes     = $NotesText
     pub_date  = $PubDate
-    platforms = $PlatformEntries
 }
+if ($MinLauncher) { $LatestJson.minLauncherVersion = $MinLauncher }
+$LatestJson.platforms = $PlatformEntries
 
 $LatestJsonPath = Join-Path ([System.IO.Path]::GetTempPath()) "latest-$AppId-$Version.json"
 $LatestJson | ConvertTo-Json -Depth 6 | Set-Content -Path $LatestJsonPath -Encoding utf8
