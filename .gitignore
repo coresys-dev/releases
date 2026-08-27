@@ -5,3 +5,6 @@
 
 # Secrets — GITHUB_TOKEN etc. Never commit.
 .env
+
+# Local-only docs / integration notes.
+/docs/

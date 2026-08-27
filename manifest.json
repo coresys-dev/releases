@@ -2,11 +2,13 @@
   "$schema": "https://raw.githubusercontent.com/coresys-dev/releases/main/manifest.schema.json",
   "schemaVersion": 1,
   "repo": "coresys-dev/releases",
-  "updatedAt": "2026-08-26T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z",
+  "minLauncherVersion": "0.1.0",
   "apps": [
     {
       "id": "core",
       "name": "CORE",
+      "hidden": true,
       "tagline": "The clean, lightweight suite of creative tools for video editors.",
       "description": "CORE Tools is a clean, lightweight suite of creative tools made for video editors, content creators, and post-production workflows. The goal is simple: provide small, focused apps that help with editing, without turning the workflow into an absolute mess.",
       "category": "creative-suite",
