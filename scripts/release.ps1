@@ -205,9 +205,17 @@ if (-not $NotesText) {
 }
 
 # Refuse to clobber an existing release/tag.
+# Note: in Windows PowerShell 5.1, redirecting a native command's stderr while
+# $ErrorActionPreference = 'Stop' turns "release not found" into a terminating
+# NativeCommandError. Drop stderr at the process level and read the exit code only.
 if (-not $DryRun) {
-    $existing = gh release view $Tag --repo $RepoSlug 2>$null
-    if ($LASTEXITCODE -eq 0 -and $existing) {
+    $prevEap = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    $null = gh release view $Tag --repo $RepoSlug 2>&1
+    $releaseExists = ($LASTEXITCODE -eq 0)
+    $ErrorActionPreference = $prevEap
+
+    if ($releaseExists) {
         throw "A release for tag '$Tag' already exists. Bump -Version or delete the existing draft first."
     }
 }

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/coresys-dev/releases/main/manifest.schema.json",
   "title": "CORE Tools Store Manifest",
-  "description": "Consumed by the app launcher to list available apps in the store: icon, screenshots and description are fetched from this repo using each app's media paths.",
+  "description": "Consumed by the app launcher to list available apps in the store: icon, screenshots and description are fetched from this repo using each app's media paths. Media paths are rooted at the repo root (e.g. '/apps/<id>/icon/icon.png') and resolved against https://raw.githubusercontent.com/<repo>/main.",
   "type": "object",
   "required": ["schemaVersion", "repo", "apps"],
   "additionalProperties": false,
@@ -68,12 +68,13 @@
           "properties": {
             "icon": {
               "type": "string",
-              "description": "Repo-relative path to the app icon/logo, fetched via raw.githubusercontent.com."
+              "description": "Path to the app icon/logo, rooted at the repo root, e.g. '/apps/<id>/icon/icon.png'. Resolved as https://raw.githubusercontent.com/<repo>/main<path>.",
+              "pattern": "^/apps/[a-z0-9][a-z0-9-]*/.+"
             },
             "screenshots": {
               "type": "array",
-              "description": "Repo-relative paths to presentation screenshots (3 recommended).",
-              "items": { "type": "string" },
+              "description": "Repo-root paths to presentation screenshots (3 recommended), e.g. '/apps/<id>/screenshots/1.png'. Same resolution rule as icon.",
+              "items": { "type": "string", "pattern": "^/apps/[a-z0-9][a-z0-9-]*/.+" },
               "minItems": 1
             }
           }
