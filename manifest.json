@@ -17,7 +17,7 @@
       "homepage": "",
       "changelog": "",
       "media": {
-        "icon": "core/icon/icon.png",
+        "icon": "/apps/core/icon/icon.png",
         "screenshots": [
           "/apps/core/screenshots/1.png",
           "/apps/core/screenshots/2.png",
@@ -36,7 +36,7 @@
       "homepage": "",
       "changelog": "",
       "media": {
-        "icon": "sldr/icon/icon.png",
+        "icon": "/apps/sldr/icon/icon.png",
         "screenshots": [
           "/apps/sldr/screenshots/1.png",
           "/apps/sldr/screenshots/2.png",
