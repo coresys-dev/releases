@@ -228,10 +228,12 @@ foreach ($platformKey in $PlatformFiles.Keys) {
     $platformName = $PlatformFolderMap[$platformKey]
     $assetEntries = @()
     foreach ($f in $PlatformFiles[$platformKey]) {
+        $sha256 = (Get-FileHash -Algorithm SHA256 -Path $f.FullName).Hash.ToLower()
         $assetEntries += [ordered]@{
-            name = $f.Name
-            url  = "$DownloadBase/$($f.Name)"
-            size = $f.Length
+            name   = $f.Name
+            url    = "$DownloadBase/$($f.Name)"
+            size   = $f.Length
+            sha256 = $sha256
         }
     }
     $PlatformEntries[$platformName] = [ordered]@{ assets = $assetEntries }
@@ -268,7 +270,10 @@ Write-Host "Draft:    yes (manual publish required)"
 Write-Host "Assets:"
 foreach ($platformKey in $PlatformFiles.Keys) {
     Write-Host ("  [{0}]" -f $PlatformFolderMap[$platformKey])
-    foreach ($f in $PlatformFiles[$platformKey]) { Write-Host ("    - {0} ({1:N0} bytes)" -f $f.Name, $f.Length) }
+    foreach ($f in $PlatformFiles[$platformKey]) {
+        $shaShort = (Get-FileHash -Algorithm SHA256 -Path $f.FullName).Hash.Substring(0, 8).ToLower()
+        Write-Host ("    - {0} ({1:N0} bytes) sha256:{2}..." -f $f.Name, $f.Length, $shaShort)
+    }
 }
 Write-Host "  - latest.json (generated)"
 Write-Host ""

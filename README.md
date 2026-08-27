@@ -77,12 +77,12 @@ Each release gets a generated `latest.json` asset for the launcher's update chec
   "platforms": {
     "windows": {
       "assets": [
-        { "name": "CORE-Setup-1.4.2.exe", "url": "https://github.com/coresys-dev/releases/releases/download/core-v1.4.2/CORE-Setup-1.4.2.exe", "size": 12345678 }
+        { "name": "CORE-Setup-1.4.2.exe", "url": "https://github.com/coresys-dev/releases/releases/download/core-v1.4.2/CORE-Setup-1.4.2.exe", "size": 12345678, "sha256": "9f2c...e1a" }
       ]
     },
     "macos": {
       "assets": [
-        { "name": "CORE-1.4.2.dmg", "url": "https://github.com/coresys-dev/releases/releases/download/core-v1.4.2/CORE-1.4.2.dmg", "size": 12345678 }
+        { "name": "CORE-1.4.2.dmg", "url": "https://github.com/coresys-dev/releases/releases/download/core-v1.4.2/CORE-1.4.2.dmg", "size": 12345678, "sha256": "3b81...77d" }
       ]
     }
   }
@@ -90,5 +90,7 @@ Each release gets a generated `latest.json` asset for the launcher's update chec
 ```
 
 The launcher checks for updates by listing releases for the app's `releaseTagPrefix` via the GitHub API, taking the newest **published, non-draft** one, reading its `latest.json` asset, and picking the `platforms` entry matching the user's OS. Because releases start as drafts, nothing is visible to the auto-updater until it's published manually. Asset file names must be unique across platforms within a release (the script checks this).
+
+Each asset entry also carries a `sha256` (lowercase hex, 64 chars) of the uploaded file so the launcher can verify the download's integrity before running it — see `docs/LAUNCHER_SHA256_VERIFICATION.md`.
 
 Requires the [GitHub CLI](https://cli.github.com/) (`gh`), authenticated (`gh auth login`) with push access to this repo.
