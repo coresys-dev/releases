@@ -257,7 +257,12 @@ $LatestJson = [ordered]@{
 if ($MinLauncher) { $LatestJson.minLauncherVersion = $MinLauncher }
 $LatestJson.platforms = $PlatformEntries
 
-$LatestJsonPath = Join-Path ([System.IO.Path]::GetTempPath()) "latest-$AppId-$Version.json"
+# The asset MUST be uploaded as exactly "latest.json" - CORE's auto-updater
+# fetches that filename verbatim and breaks on anything else. Put it in a
+# unique temp subfolder so concurrent releases don't collide on the name.
+$LatestJsonDir = Join-Path ([System.IO.Path]::GetTempPath()) "release-$AppId-$Version-$([guid]::NewGuid().ToString('N'))"
+New-Item -ItemType Directory -Path $LatestJsonDir -Force | Out-Null
+$LatestJsonPath = Join-Path $LatestJsonDir "latest.json"
 $LatestJson | ConvertTo-Json -Depth 6 | Set-Content -Path $LatestJsonPath -Encoding utf8
 
 Write-Host ""
