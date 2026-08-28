@@ -11,6 +11,7 @@ manifest.json          # store manifest, consumed by the launcher (see below)
 manifest.schema.json   # JSON Schema for manifest.json
 <app-id>/
   icon/icon.png         # app icon/logo
+  banner/banner.png     # wide hero banner (optional) — 1920x480 PNG, 4:1
   screenshots/1.png     # up to 3 presentation screenshots
   screenshots/2.png
   screenshots/3.png
@@ -39,6 +40,7 @@ Fetched by the launcher (e.g. via `raw.githubusercontent.com/coresys-dev/release
   "changelog": "",
   "media": {
     "icon": "core/icon/icon.png",
+    "banner": "core/banner/banner.png",
     "screenshots": ["core/screenshots/1.png", "core/screenshots/2.png", "core/screenshots/3.png"]
   }
 }
