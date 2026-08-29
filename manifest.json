@@ -40,9 +40,9 @@
         "icon": "/apps/sldr/icon/icon.png",
         "banner": "/apps/sldr/banner/banner.png",
         "screenshots": [
-          { "src": "/apps/sldr/screenshots/1.png", "caption": "TODO: add caption" },
-          { "src": "/apps/sldr/screenshots/2.png", "caption": "TODO: add caption" },
-          { "src": "/apps/sldr/screenshots/3.png", "caption": "TODO: add caption" }
+          { "src": "/apps/sldr/screenshots/1.png", "caption": "Comfort library display" },
+          { "src": "/apps/sldr/screenshots/2.png", "caption": "Compact library display" },
+          { "src": "/apps/sldr/screenshots/3.png", "caption": "TinyLDR widget" }
         ]
       }
     }
