@@ -37,7 +37,7 @@
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "sldr-v",
       "homepage": "",
-      "changelog": "",
+      "changelog": "https://affine.coresys.dev/workspace/ef9a9de6-8f99-43e1-928a-fe681b2f5144/wFqKYhaV_vKQn5Ed5ZeTv",
       "media": {
         "icon": "/apps/sldr/icon/icon.png",
         "banner": "/apps/sldr/banner/banner.png",
