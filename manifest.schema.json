@@ -44,6 +44,11 @@
         "tagline": { "type": "string", "description": "Short one-line pitch shown in store listings." },
         "description": { "type": "string", "description": "Longer description shown on the app's detail page." },
         "category": { "type": "string" },
+        "pricing": {
+          "type": "string",
+          "enum": ["", "free"],
+          "description": "Set to \"free\" to mark the app as available for free. Empty or absent means the app is locked to a license."
+        },
         "platforms": {
           "type": "array",
           "items": { "type": "string", "enum": ["windows", "macos", "linux"] }
