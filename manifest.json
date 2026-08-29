@@ -40,9 +40,9 @@
         "icon": "/apps/sldr/icon/icon.png",
         "banner": "/apps/sldr/banner/banner.png",
         "screenshots": [
-          "/apps/sldr/screenshots/1.png",
-          "/apps/sldr/screenshots/2.png",
-          "/apps/sldr/screenshots/3.png"
+          { "src": "/apps/sldr/screenshots/1.png", "caption": "TODO: add caption" },
+          { "src": "/apps/sldr/screenshots/2.png", "caption": "TODO: add caption" },
+          { "src": "/apps/sldr/screenshots/3.png", "caption": "TODO: add caption" }
         ]
       }
     }

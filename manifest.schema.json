@@ -78,8 +78,28 @@
             },
             "screenshots": {
               "type": "array",
-              "description": "Repo-root paths to presentation screenshots (3 recommended), e.g. '/apps/<id>/screenshots/1.png'. Same resolution rule as icon.",
-              "items": { "type": "string", "pattern": "^/apps/[a-z0-9][a-z0-9-]*/.+" },
+              "description": "Presentation screenshots (3 recommended). Each item is either a repo-root path string (e.g. '/apps/<id>/screenshots/1.png') or an object with 'src' and an optional 'caption'. Same resolution rule as icon.",
+              "items": {
+                "oneOf": [
+                  { "type": "string", "pattern": "^/apps/[a-z0-9][a-z0-9-]*/.+" },
+                  {
+                    "type": "object",
+                    "required": ["src"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "src": {
+                        "type": "string",
+                        "description": "Repo-root path to the screenshot image. Same resolution rule as icon.",
+                        "pattern": "^/apps/[a-z0-9][a-z0-9-]*/.+"
+                      },
+                      "caption": {
+                        "type": "string",
+                        "description": "Custom caption / tooltip shown for this screenshot in the store."
+                      }
+                    }
+                  }
+                ]
+              },
               "minItems": 1
             }
           }
