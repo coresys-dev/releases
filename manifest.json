@@ -47,6 +47,27 @@
           { "src": "/apps/sldr/screenshots/3.png", "caption": "TinyLDR widget" }
         ]
       }
+    },
+    {
+      "id": "planwise",
+      "name": "Planwise",
+      "tagline": "Plan, organize, and accomplish.",
+      "description": "Planwise is a simple, lightweight planning tool for organizing your tasks and activities. It helps you stay on top of your schedule and make the most of your time.",
+      "category": "creative-tool",
+      "pricing": "free",
+      "platforms": ["windows", "macos"],
+      "releaseTagPrefix": "planwise-v",
+      "homepage": "",
+      "changelog": "",
+      "media": {
+        "icon": "/apps/planwise/icon/icon.png",
+        "banner": "/apps/planwise/banner/banner.png",
+        "screenshots": [
+          { "src": "/apps/planwise/screenshots/1.png", "caption": "No tasks Planwise main screen" },
+          { "src": "/apps/planwise/screenshots/2.png", "caption": "With tasks Planwise main screen" },
+          { "src": "/apps/planwise/screenshots/3.png", "caption": "Planwise widget" }
+        ]
+      }
     }
   ]
 }
