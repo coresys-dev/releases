@@ -16,7 +16,7 @@
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "core-v",
       "homepage": "",
-      "changelog": "https://docs.coresys.dev/share/h0t6rclsjy/p/core-0-2-1-dFORDSsljR",
+      "changelog": "https://docs.coresys.dev/share/rm2cxcuu4r/p/core-0-2-2-8t2ecYcC3C",
       "media": {
         "icon": "/apps/core/icon/icon.png",
         "banner": "/apps/core/banner/banner.png",
@@ -58,7 +58,7 @@
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "planwise-v",
       "homepage": "",
-      "changelog": "",
+      "changelog": "https://docs.coresys.dev/share/4a7twqlsq1/p/planwise-0-1-0-0-1-1-zGdmDYGL9b",
       "media": {
         "icon": "/apps/planwise/icon/icon.png",
         "banner": "/apps/planwise/banner/banner.png",
