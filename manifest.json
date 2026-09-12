@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "repo": "coresys-dev/releases",
   "updatedAt": "2026-08-27T00:00:00Z",
-  "minLauncherVersion": "0.2.1",
+  "minLauncherVersion": "0.2.2",
   "apps": [
     {
       "id": "core",
