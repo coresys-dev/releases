@@ -54,7 +54,7 @@
       "tagline": "Plan, organize, and accomplish.",
       "description": "Planwise is a simple, lightweight planning tool for organizing your tasks and activities. It helps you stay on top of your schedule and make the most of your time.",
       "category": "creative-tool",
-      "pricing": "free",
+      "pricing": "",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "planwise-v",
       "homepage": "",
