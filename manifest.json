@@ -16,7 +16,7 @@
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "core-v",
       "homepage": "",
-      "changelog": "https://docs.coresys.dev/share/tnk6rnsdby/p/core-0-3-0-zZw4IcQgN7",
+      "changelog": "https://docs.coresys.dev/share/cxdhjj4yq3/p/core-0-3-3-4-UW9RvB3h0A",
       "media": {
         "icon": "/apps/core/icon/icon.png",
         "banner": "/apps/core/banner/banner.png",
@@ -37,7 +37,7 @@
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "sldr-v",
       "homepage": "",
-      "changelog": "https://docs.coresys.dev/share/2m2gqmi4o8/p/sldr-0-3-0-YjuesjEHbi",
+      "changelog": "https://docs.coresys.dev/share/zz7xtx38et/p/sldr-0-3-2-bQ5RZraEfX",
       "media": {
         "icon": "/apps/sldr/icon/icon.png",
         "banner": "/apps/sldr/banner/banner.png",
