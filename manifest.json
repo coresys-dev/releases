@@ -53,7 +53,7 @@
       "name": "SPIR",
       "tagline": "Search. Preview. Import. Repeat.",
       "description": "SPIR is a simple, lightweight browser for video resources (images, videos, green screens, LUTs and DaVinci Resolve or Premiere Pro presets) for quickly previewing assets and dragging them into your editor. It supports drag-and-drop from the app to any other app that accepts media files.",
-      "category": "creative-tool",
+      "category": "comming-soon",
       "pricing": "",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "spir-v",
