@@ -49,11 +49,32 @@
       }
     },
     {
+      "id": "spir",
+      "name": "SPIR",
+      "tagline": "Search. Preview. Import. Repeat.",
+      "description": "SPIR is a simple, lightweight browser for video resources (images, videos, green screens, LUTs and DaVinci Resolve or Premiere Pro presets) for quickly previewing assets and dragging them into your editor. It supports drag-and-drop from the app to any other app that accepts media files.",
+      "category": "creative-tool",
+      "pricing": "",
+      "platforms": ["windows", "macos"],
+      "releaseTagPrefix": "spir-v",
+      "homepage": "",
+      "changelog": "",
+      "media": {
+        "icon": "/apps/spir/icon/icon.png",
+        "banner": "/apps/spir/banner/banner.png",
+        "screenshots": [
+          { "src": "/apps/spir/screenshots/1.png", "caption": "Comfort library display" },
+          { "src": "/apps/spir/screenshots/2.png", "caption": "Compact library display" },
+          { "src": "/apps/spir/screenshots/3.png", "caption": "TinyLDR widget" }
+        ]
+      }
+    },
+    {
       "id": "planwise",
       "name": "Planwise",
       "tagline": "Plan, organize, and accomplish.",
       "description": "Planwise is a simple, lightweight planning tool for organizing your tasks and activities. It helps you stay on top of your schedule and make the most of your time.",
-      "category": "creative-tool",
+      "category": "free-tool",
       "pricing": "free",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "planwise-v",
