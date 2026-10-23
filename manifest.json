@@ -93,7 +93,6 @@
     {
       "id": "drift",
       "name": "DRIFT",
-      "hidden": true,
       "tagline": "Let your ideas drift. Keep control of the road.",
       "description": "DRIFT is a workspace designed for video creators and editors. From the first idea to the final cut, plan your projects, organize your workflow, write your scripts, and prepare your edits in one place. Build your scripts with integrated media, keep track of every task, manage your production calendar, and bring structure to your creative process without juggling a dozen different tools. Inspired by the flexibility of Notion, but purpose-built for the way video creators actually work.",
       "category": "coming-soon",
