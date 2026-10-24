@@ -105,11 +105,11 @@
         "icon": "/apps/drift/icon/icon.png",
         "banner": "/apps/drift/banner/banner.png",
         "screenshots": [
-          "/apps/drift/screenshots/1.png",
-          "/apps/drift/screenshots/2.png",
-          "/apps/drift/screenshots/3.png",
-          "/apps/drift/screenshots/4.png",
-          "/apps/drift/screenshots/5.png"
+          { "src": "/apps/drift/screenshots/1.png", "caption": "Creator Mode home" },
+          { "src": "/apps/drift/screenshots/2.png", "caption": "Creator Mode project" },
+          { "src": "/apps/drift/screenshots/3.png", "caption": "Document with media mentions" },
+          { "src": "/apps/drift/screenshots/4.png", "caption": "Editor Mode with pipeline view" },
+          { "src": "/apps/drift/screenshots/5.png", "caption": "Graphic designer Mode with calendar view" }
         ]
       }
     }
