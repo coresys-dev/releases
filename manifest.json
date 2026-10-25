@@ -112,6 +112,27 @@
           { "src": "/apps/drift/screenshots/5.png", "caption": "Graphic designer Mode with calendar view" }
         ]
       }
+    },
+    {
+      "id": "crayon",
+      "name": "Crayon",
+      "tagline": "Infinite whiteboard for your infiniteideas.",
+      "description": "Crayon is an infinite whiteboard built for thinking without limits. Sketch ideas, map out projects, and bring everything together on a single canvas that grows with you. Add shapes, sticky notes, text, images, and files of any kind, then arrange them freely to brainstorm, plan, or build moodboards. A blank canvas for every idea, connected to the way you create.",
+      "category": "free-tool",
+      "pricing": "free",
+      "platforms": ["windows", "macos"],
+      "releaseTagPrefix": "crayon-v",
+      "homepage": "",
+      "changelog": "",
+      "media": {
+        "icon": "/apps/crayon/icon/icon.png",
+        "banner": "/apps/crayon/banner/banner.png",
+        "screenshots": [
+          { "src": "/apps/crayon/screenshots/1.png", "caption": "Whiteboard view" },
+          { "src": "/apps/crayon/screenshots/2.png", "caption": "Whiteboard with sidebar popover" },
+          { "src": "/apps/crayon/screenshots/3.png", "caption": "In sync with DRIFT" }
+        ]
+      }
     }
   ]
 }
