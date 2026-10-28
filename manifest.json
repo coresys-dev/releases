@@ -33,6 +33,14 @@
       "tagline": "Search. Listen. Drag. Repeat.",
       "description": "SLDR is a simple, lightweight audio sample browser for quickly auditioning and dragging samples into your DAW or editor. It supports drag-and-drop from the app to any other app that accepts audio files.",
       "category": "audio",
+      "features": [
+        { "icon": "Search", "title": "Search", "body": "Find a resource by name or by content with Smart Analysis." },
+        { "icon": "Play", "title": "Listen", "body": "Play sounds and music before they reach your timeline." },
+        { "icon": "Download", "title": "Drag", "body": "Drag what you found straight into any software." },
+        { "icon": "RefreshCw", "title": "Repeat", "body": "Next shot, same flow. Your library stays indexed between sessions." }
+      ],
+      "tags": ["SFX", "Sounds", "Sound design", "Library", "Music", "Easy integration"],
+      "featured": true,
       "pricing": "",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "sldr-v",
@@ -55,14 +63,6 @@
       "description": "SPIR is a simple, lightweight browser for video resources (images, videos, green screens, LUTs and DaVinci Resolve or Premiere Pro presets) for quickly previewing assets and dragging them into your editor. It supports drag-and-drop from the app to any other app that accepts media files.",
       "category": "video",
       "status": "soon",
-      "featured": true,
-      "features": [
-        { "icon": "Search", "title": "Search", "body": "Find a resource by name or type across every folder you added." },
-        { "icon": "Play", "title": "Preview", "body": "Play clips and inspect images before they reach your timeline." },
-        { "icon": "Download", "title": "Import", "body": "Drag what you found straight into DaVinci Resolve or Premiere Pro." },
-        { "icon": "RefreshCw", "title": "Repeat", "body": "Next shot, same flow. Your library stays indexed between sessions." }
-      ],
-      "tags": ["Video", "Images", "Green screen", "LUTs", "DaVinci Resolve presets", "Premiere Pro presets"],
       "pricing": "",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "spir-v",
