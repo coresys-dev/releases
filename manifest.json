@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/coresys-dev/releases/main/manifest.schema.json",
   "schemaVersion": 1,
   "repo": "coresys-dev/releases",
-  "updatedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-10-29T21:44:48Z",
   "minLauncherVersion": "0.2.2",
   "apps": [
     {
@@ -33,6 +33,7 @@
       "tagline": "Search. Listen. Drag. Repeat.",
       "description": "SLDR is a simple, lightweight audio sample browser for quickly auditioning and dragging samples into your DAW or editor. It supports drag-and-drop from the app to any other app that accepts audio files.",
       "category": "audio",
+      "status": "",
       "features": [
         { "icon": "Search", "title": "Search", "body": "Find a resource by name or by content with Smart Analysis." },
         { "icon": "Play", "title": "Listen", "body": "Play sounds and music before they reach your timeline." },
@@ -84,6 +85,7 @@
       "tagline": "Plan, organize, and accomplish.",
       "description": "Planwise is a simple, lightweight planning tool for organizing your tasks and activities. It helps you stay on top of your schedule and make the most of your time.",
       "category": "productivity",
+      "status": "",
       "pricing": "free",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "planwise-v",
@@ -129,6 +131,7 @@
       "tagline": "Infinite whiteboard for your infinite ideas.",
       "description": "Crayon is an infinite whiteboard built for thinking without limits. Sketch ideas, map out projects, and bring everything together on a single canvas that grows with you. Add shapes, sticky notes, text, images, and files of any kind, then arrange them freely to brainstorm, plan, or build moodboards. A blank canvas for every idea, connected to the way you create.",
       "category": "productivity",
+      "status": "new",
       "pricing": "free",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "crayon-v",
