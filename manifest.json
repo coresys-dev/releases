@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/coresys-dev/releases/main/manifest.schema.json",
   "schemaVersion": 1,
   "repo": "coresys-dev/releases",
-  "updatedAt": "2026-10-30T11:03:42Z",
+  "updatedAt": "2026-10-30T13:34:33Z",
   "minLauncherVersion": "0.5.0",
   "apps": [
     {
@@ -16,7 +16,7 @@
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "core-v",
       "homepage": "https://coresys.dev/core",
-      "changelog": "https://docs.coresys.dev/share/xrlscaoyia/p/core-0-4-0-UjaWjrfA52",
+      "changelog": "https://docs.coresys.dev/share/x4afpt1i2z/p/core-0-5-0-M4vfks0zNv",
       "media": {
         "icon": "/apps/core/icon/icon.png",
         "banner": "/apps/core/banner/banner.png",
@@ -45,7 +45,7 @@
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "sldr-v",
       "homepage": "https://coresys.dev/sldr",
-      "changelog": "https://docs.coresys.dev/share/9szg1b8pwf/p/sldr-0-4-0-gtJTRhEFwW",
+      "changelog": "https://docs.coresys.dev/share/yo0iipsn7r/p/sldr-0-5-0-REWlq8whYv",
       "media": {
         "icon": "/apps/sldr/icon/icon.png",
         "banner": "/apps/sldr/banner/banner.png",
@@ -108,6 +108,12 @@
       "category": "productivity",
       "status": "new",
       "featured": true,
+      "features": [
+        { "icon": "ClipboardPenIcon", "title": "Plan you work easily" },
+        { "icon": "Calendar", "title": "Follow your deadlines" },
+        { "icon": "AppWindowIcon", "title": "All your project, in one place" },
+        { "icon": "LucideRobotArm", "title": "Get AI to help you with MCP server" }
+      ],
       "pricing": "",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "drift-v",
