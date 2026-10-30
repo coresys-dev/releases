@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/coresys-dev/releases/main/manifest.schema.json",
   "schemaVersion": 1,
   "repo": "coresys-dev/releases",
-  "updatedAt": "2026-10-29T21:44:48Z",
-  "minLauncherVersion": "0.2.2",
+  "updatedAt": "2026-10-30T11:03:42Z",
+  "minLauncherVersion": "0.5.0",
   "apps": [
     {
       "id": "core",
@@ -41,7 +41,6 @@
         { "icon": "RefreshCw", "title": "Repeat", "body": "Next shot, same flow. Your library stays indexed between sessions." }
       ],
       "tags": ["SFX", "Sounds", "Sound design", "Library", "Music", "Easy integration"],
-      "featured": true,
       "pricing": "",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "sldr-v",
@@ -107,7 +106,8 @@
       "tagline": "Let your ideas drift. Keep control of the road.",
       "description": "DRIFT is a workspace designed for video creators and editors. From the first idea to the final cut, plan your projects, organize your workflow, write your scripts, and prepare your edits in one place. Build your scripts with integrated media, keep track of every task, manage your production calendar, and bring structure to your creative process without juggling a dozen different tools. Inspired by the flexibility of Notion, but purpose-built for the way video creators actually work.",
       "category": "productivity",
-      "status": "soon",
+      "status": "new",
+      "featured": true,
       "pricing": "",
       "platforms": ["windows", "macos"],
       "releaseTagPrefix": "drift-v",
